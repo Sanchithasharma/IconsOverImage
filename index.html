@@ -13,16 +13,8 @@
         }
 
         .image {
-            /* position: relative; */
             width: 100%;
             height: auto;
-
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
         }
 
         .overlay {
@@ -38,7 +30,14 @@
             background-color: transparent;
         }
 
-        .container:hover .overlay {
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+
+        .overlay:hover {
             opacity: 0.7;
         }
 
@@ -52,26 +51,42 @@
             -ms-transform: translate(-50%, -50%);
             cursor: pointer;
             width: 20%;
+            z-index: 2;
+
         }
 
         .like-button {
             position: absolute;
             z-index: 2;
-            color: whitesmoke;
-            font-size: 20px;
+            color: #f5f5f5;
+            font-size: 25px;
             text-align: right;
             cursor: pointer;
             border-radius: 10rem;
             background-color: transparent;
             border: transparent;
             width: 99%;
-            padding-top: 4px;
-            padding-right: 4px;
+            /* padding-top: 4px; */
+            /* padding-right: 4px; */
+        }
+
+        /* .like-button:hover .fa-heart {
+            color: red;
+        } */
+
+        .fa-heart:hover {
+            /* z-index: 2; */
+            color: red;
 
         }
 
-        .like-button :hover {
-            color: red;
+        p {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 12px;
+            padding-left: 7px;
+            padding-bottom: 5px;
         }
     </style>
 </head>
@@ -79,11 +94,15 @@
 <body>
 
     <h2>Video Player</h2>
-    <p>Hover over to play the video</p>
+    <div>
+
+
+    </div>
 
     <div class="container">
 
         <div href="#" class="like-button" title="Like Button">
+            <p>Video of the trees</p>
             <i class="fa fa-heart fa-1x"></i>
         </div>
 
