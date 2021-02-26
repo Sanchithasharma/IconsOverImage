@@ -1,14 +1,14 @@
 # IconsOverImage
 Icons over the Image
  
-**Video Player design:
+**Video Player design:**
 
 1) Few texts and Image is placed in the center
 2) Play icon is added in the center
 3) Like button is on the top right of the image
 
 
-**Description:
+**Description:**
 
 1) The image is given the property `position: relative`
 2) The icons or the things that is to be placed on the Image are given the property `position: absolute`
