@@ -1,7 +1,6 @@
 # IconsOverImage
 
-![The Image](./127.0.0.1_5500_index.html.png)
-Icons over the Image
+![Icons over the Image](./127.0.0.1_5500_index.html.png)
  
 **Video Player design:**
 
