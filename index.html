@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            width: 600px;
+            position: relative;
+
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.3;
+            transition: .3s ease;
+            background-color: transparent;
+        }
+
+        .container:hover .overlay {
+            opacity: 0.7;
+        }
+
+        .play-icon {
+            color: black;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .like-button {
+            position: absolute;
+            z-index: 2;
+            color: whitesmoke;
+            font-size: 25px;
+            text-align: right;
+            cursor: pointer;
+            border-radius: 10rem;
+            background-color: transparent;
+            border: transparent;
+            width: 590px;
+            padding-top: 4px;
+            padding-right: 4px;
+
+        }
+
+        .like-button :hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Video Player</h2>
+    <p>Hover over to play the video</p>
+
+    <div class="container">
+
+        <div href="#" class="like-button" title="Like Button">
+            <i class="fa fa-heart fa-1x"></i>
+        </div>
+
+        <img src="https://static-videos.pexels.com/videos/1448735/pictures/preview-0.jpg" alt="Beautiful Image"
+            class="image">
+
+        <div class="overlay">
+            <button href="#" class="play-icon" title="Video Play">
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
